@@ -1,0 +1,52 @@
+@import "colors.less";
+
+@font-family: Helvetica, Arial, sans-serif;
+
+.font-face(@file-name, @font-family, @font-weight: 400, @font-style: normal) {
+  @font-face {
+    font-family: "@{font-family}";
+    src: url("/assets/fonts/@{file-name}.woff") format('woff');
+    font-weight: @font-weight;
+    font-style: @font-style;
+  }
+}
+
+.font-face(Gilroy-Bold, Gilroy, 700);
+
+.font-size-extra-large() {
+  font-size: 4.2em;
+  line-height: 1.13;
+}
+
+
+.font-size-large() {
+  font-size: 3.125em;
+  line-height: 1.08;
+}
+
+.font-size-medium() {
+  font-size: 2.375em;
+  line-height: 1.27;
+}
+
+.font-size-regular() {
+  font-size: 1.3em;
+  line-height: 1.52;
+  letter-spacing: normal;
+}
+
+.font-size-small() {
+  font-size: 1em;
+}
+
+.font-bold() {
+  font-family: Gilroy, @font-family;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.font-regular() {
+  font-family: "Helvetica Neue", @font-family;
+  font-weight: 400;
+  font-style: normal;
+}
