@@ -1,0 +1,27 @@
+.layout {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.1rem;
+
+  @media (min-width: @tablet-size) {
+    max-width: 864px;
+  }
+
+  @media (min-width: @desktop-size) {
+    max-width: 1088px;
+  }
+}
+
+.white-panel {
+  background: @light;
+  padding: 3rem 1rem;
+
+  @media (min-width: @phone-size) {
+    padding: 3rem 3.75rem;
+    border-radius: 12px;
+  }
+
+  @media (min-width: @tablet-size) {
+    padding: 4rem 5rem;
+  }
+}
