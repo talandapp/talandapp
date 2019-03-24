@@ -12,6 +12,7 @@
 }
 
 .font-face(Gilroy-Bold, Gilroy, 700);
+.font-face(Gilroy-Regular, Gilroy, 400);
 
 .font-size-extra-large() {
   font-size: 4.2rem;
@@ -44,10 +45,12 @@
   font-family: Gilroy, @font-family;
   font-weight: 700;
   font-style: normal;
+  -webkit-font-smoothing: antialiased;
 }
 
 .font-regular() {
-  font-family: "Helvetica Neue", @font-family;
+  font-family: Gilroy, @font-family;
   font-weight: 400;
   font-style: normal;
+  -webkit-font-smoothing: antialiased;
 }
