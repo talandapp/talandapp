@@ -1,7 +1,6 @@
 .layout {
   margin-left: auto;
   margin-right: auto;
-  padding: 1.1rem;
 
   @media (min-width: @tablet-size) {
     max-width: 864px;
@@ -14,14 +13,21 @@
 
 .white-panel {
   background: @light;
-  padding: 3rem 1rem;
+  padding: 3rem 5%;
 
   @media (min-width: @phone-size) {
-    padding: 3rem 3.75rem;
+    //padding: 3rem 3.75rem;
     border-radius: 12px;
   }
 
   @media (min-width: @tablet-size) {
-    padding: 4rem 5rem;
+   // padding: 4rem 5rem;
+  }
+}
+
+.paddings {
+  @media (min-width: @small-phone-size) {
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
